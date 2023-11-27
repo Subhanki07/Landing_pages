@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simpli landing page using html css </title>
+<style type="text/css">
+    *{padding: 0;margin:0;box-sizing: border-box;}
+  header{
+    width:100%;
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('web.background.jpg');
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+  nav{
+     width: 100%;
+     height:100%px;
+     display: flex;
+     justify-content: space-around;
+     align-items:center;
+  }
+  .logo{
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: aliceblue;
+  }
+  .menue a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+  }
+  .menue a:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width:0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+    
+  }
+  .menue a:hover:before{
+    width: 90%;
+  }
+  .Register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: indianred;
+    border-radius: 8px;
+    transition: 0.4s;
+  }
+  .Register a:hover{
+    background:transparent ;
+    border:1px solid indianred;
+  }
+  .h-txt{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: beige;}
+    .h-txt span{
+      letter-spacing: 5px;
+    }
+    .h-txt h1{
+      font-size: 3.5em;
+    }
+    .h-txt a{
+      text-decoration: none;
+      background:mediumslateblue;
+      color: white;
+      padding: 10px 20px;
+      letter-spacing: 5px;
+      transition: 0.4s;
+    }
+    .h-txt a:hover{
+    background:transparent ;
+    border:1px solid mediumslateblue;
+    }
+  </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            Travel Contentment
+            </div>
+            <div class="menue">
+                <a href="#">Home</a>
+                <a href="#">Hill stations</a>
+                <a href="#">Best offer's</a>
+                <a href="#">Our Sites</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="Register">
+                <a href="#">Register</a>
+            </div>
+    </nav>
+  <section class="h-txt">
+    <span>Enjoy</span>
+    <h1>International Travel Agency</h1>
+
+    <br>
+    <a href="#">Book your Trip</a>
+  </section>
+</header>
+</body>
+</html>
